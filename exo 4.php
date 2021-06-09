@@ -1,3 +1,8 @@
+<?php
+    $a= 1234;
+    $var= 42352.23;
+    $laManu= True;
+?>
 <!DOCTYPE html>
 <html lang="fr">
 <head>
@@ -8,17 +13,17 @@
 </head>
 <body>
     <h1>Exo 4 Partie : Les variables PHP</h1>
-    <?php
-        echo 'ceci est une chaine simple de type string';
-        echo "<br>";
-        $a= 1234;
-        echo $a;
-        echo "<br>";
-        $var='42352.23';
-        $float_value_of_var = floatval($var);
-        echo $float_value_of_var;        
-        echo "<br>";
-        echo '"string": '.(boolval("string") ? 'true' : 'false')."\n";
-    ?>
+    <p>
+    <?= 'ceci est une chaine simple de type string'?>
+    </p>
+    <p>
+    <?=$a?>
+    </p>
+    <p>
+    <?=$var?>
+    </p>
+    <p>
+    <?= $laManu?>
+    </p>
 </body>
 </html>
